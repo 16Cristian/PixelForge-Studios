@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Juegos — PixelForge Studios</title>
+  <title>PixelForge Studios</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,16 +11,21 @@
     <header class="header">
       <div class="logo-wrap">
         <div class="logo" aria-hidden="true">
-          <!-- mismo SVG simplificado -->
+          <!-- Logo SVG simple -->
           <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="url(#g2)" stroke-width="1.5" />
+            <rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="url(#g)" stroke-width="1.5" />
             <path d="M7 12h10M12 7v10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
-            <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#8b5cf6"/>
+                <stop offset="1" stop-color="#06b6d4"/>
+              </linearGradient>
+            </defs>
           </svg>
         </div>
         <div>
           <h1 class="site-title">PixelForge Studios</h1>
-          <div style="font-size:12px; opacity:.7">Catálogo de juegos</div>
+          <div style="font-size:12px; opacity:.7">Indie • Juegos • Experiencias</div>
         </div>
       </div>
 
@@ -33,37 +38,60 @@
 
     <main>
       <section class="hero">
-        <h2 style="margin-top:0">Nuestros proyectos</h2>
-        <p style="margin-bottom:16px">A continuación verás una breve ficha de cada juego. Haz click en el título para más información (puedes crear páginas individuales si quieres).</p>
+        <div class="hero-inner">
+          <div class="hero-text" style="flex:1">
+            <h2>Creando mundos pixel a pixel.</h2>
+            <p>PixelForge Studios diseña juegos con corazón retro y gráficos modernos. Explora nuestros proyectos, noticias y forma parte del viaje.</p>
 
-        <div class="card-grid">
-          <article class="card">
-            <strong>Nebula Runner</strong>
-            <p style="opacity:.85; margin-top:8px">Runner espacial con niveles generados y power-ups únicos. Demo disponible para PC.</p>
-            <div style="margin-top:12px"><a class="btn" href="#">Ver demo (próximamente)</a></div>
-          </article>
+            <div style="margin-top:14px">
+              <a class="btn" href="juegos.html">Ver nuestros juegos</a>
+            </div>
+          </div>
 
-          <article class="card">
-            <strong>Pixel Xplorers</strong>
-            <p style="opacity:.85; margin-top:8px">Aventura cooperativa, pixel art, puzzles y exploración. Ideal para jugar con amigos.</p>
-            <div style="margin-top:12px"><a class="btn" href="#">Más información</a></div>
-          </article>
-
-          <article class="card">
-            <strong>Voyage Rift</strong>
-            <p style="opacity:.85; margin-top:8px">Experiencia narrativa corta con enfoque en inmersión y sonido.</p>
-            <div style="margin-top:12px"><a class="btn" href="#">Concept y capturas</a></div>
-          </article>
+          <div style="width:320px" aria-hidden="true">
+            <div class="card">
+              <h3 style="margin:0 0 8px 0">Último proyecto</h3>
+              <div style="opacity:.9">Nebula Runner — carrera espacial con estética pixel-art y niveles generados proceduralmente. Demo pronta.</div>
+            </div>
+          </div>
         </div>
 
-        <div style="margin-top:18px; opacity:.9">
-          <p>¿Quieres que hagamos páginas individuales para cada juego? Puedo generarlas ahora mismo.</p>
+        <div class="card-grid" style="margin-top:18px">
+          <div class="card">
+            <div class="game">
+              <div class="thumb">NR</div>
+              <div>
+                <strong>Nebula Runner</strong>
+                <div style="opacity:.8; font-size:13px">Demo disponible · Plataforma: PC</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="game">
+              <div class="thumb">PX</div>
+              <div>
+                <strong>Pixel Xplorers</strong>
+                <div style="opacity:.8; font-size:13px">Aventura cooperativa · En desarrollo</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="game">
+              <div class="thumb">VR</div>
+              <div>
+                <strong>Voyage Rift</strong>
+                <div style="opacity:.8; font-size:13px">Experiencia narrativa · Concept</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      © PixelForge Studios — Catálogo · Proyecto de clase
+      © <strong>PixelForge Studios</strong> — Proyecto de clase. Síguenos: <span style="opacity:.9">@PixelForgeStudios</span>
     </footer>
   </div>
 </body>

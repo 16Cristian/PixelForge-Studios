@@ -1,16 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>PixelForge Studios</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juegos — PixelForge Studios</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <body>
-    <h1>Bienvenido a PixelForge Studios</h1>
-    <p>Este es el sitio oficial de nuestro estudio de videojuegos.</p>
+  <div class="container">
+    <header class="header">
+      <div class="logo-wrap">
+        <div class="logo" aria-hidden="true">
+          <!-- mismo SVG simplificado -->
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="url(#g2)" stroke-width="1.5" />
+            <path d="M7 12h10M12 7v10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <defs><linearGradient id="g2" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">PixelForge Studios</h1>
+          <div style="font-size:12px; opacity:.7">Catálogo de juegos</div>
+        </div>
+      </div>
 
-    <a href="juegos.html">Ver nuestros juegos</a>
-    <br>
-    <a href="contactanos.html">Contáctanos</a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="juegos.html">Juegos</a>
+        <a class="btn-nav" href="contactanos.html">Contáctanos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h2 style="margin-top:0">Nuestros proyectos</h2>
+        <p style="margin-bottom:16px">A continuación verás una breve ficha de cada juego. Haz click en el título para más información (puedes crear páginas individuales si quieres).</p>
+
+        <div class="card-grid">
+          <article class="card">
+            <strong>Nebula Runner</strong>
+            <p style="opacity:.85; margin-top:8px">Runner espacial con niveles generados y power-ups únicos. Demo disponible para PC.</p>
+            <div style="margin-top:12px"><a class="btn" href="#">Ver demo (próximamente)</a></div>
+          </article>
+
+          <article class="card">
+            <strong>Pixel Xplorers</strong>
+            <p style="opacity:.85; margin-top:8px">Aventura cooperativa, pixel art, puzzles y exploración. Ideal para jugar con amigos.</p>
+            <div style="margin-top:12px"><a class="btn" href="#">Más información</a></div>
+          </article>
+
+          <article class="card">
+            <strong>Voyage Rift</strong>
+            <p style="opacity:.85; margin-top:8px">Experiencia narrativa corta con enfoque en inmersión y sonido.</p>
+            <div style="margin-top:12px"><a class="btn" href="#">Concept y capturas</a></div>
+          </article>
+        </div>
+
+        <div style="margin-top:18px; opacity:.9">
+          <p>¿Quieres que hagamos páginas individuales para cada juego? Puedo generarlas ahora mismo.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © PixelForge Studios — Catálogo · Proyecto de clase
+    </footer>
+  </div>
 </body>
 </html>

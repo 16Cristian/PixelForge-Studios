@@ -1,32 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Contáctanos - PixelForge Studios</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contáctanos — PixelForge Studios</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Contáctanos</h1>
-    <p>¿Quieres ponerte en contacto con PixelForge Studios? Rellena este formulario o usa nuestros datos de contacto.</p>
+  <div class="container">
+    <header class="header">
+      <div class="logo-wrap">
+        <div class="logo" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="21" height="21" rx="5" stroke="url(#g3)" stroke-width="1.5" />
+            <path d="M7 12h10M12 7v10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <defs><linearGradient id="g3" x1="0" x2="1"><stop offset="0" stop-color="#8b5cf6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+          </svg>
+        </div>
+        <div>
+          <h1 class="site-title">PixelForge Studios</h1>
+          <div style="font-size:12px; opacity:.7">Contacto</div>
+        </div>
+      </div>
 
-    <h2>Formulario de contacto</h2>
-    <form>
-        <label>Nombre:</label><br>
-        <input type="text" name="nombre"><br><br>
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="juegos.html">Juegos</a>
+        <a class="btn-nav" href="contactanos.html">Contáctanos</a>
+      </nav>
+    </header>
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+    <main>
+      <section class="hero">
+        <h2 style="margin-top:0">Escríbenos</h2>
+        <p style="margin-bottom:16px">¿Tienes una duda, propuesta o quieres colaborar? Llena el formulario o usa el email.</p>
 
-        <label>Mensaje:</label><br>
-        <textarea name="mensaje" rows="5" cols="30"></textarea><br><br>
+        <!-- Nota: GitHub Pages no envía formularios por defecto.
+             Puedes usar Formspree o un mailto: (ejemplo abajo). -->
+        <div class="card">
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label>Nombre</label><br>
+            <input type="text" name="nombre" placeholder="Tu nombre" required><br><br>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <label>Email</label><br>
+            <input type="email" name="email" placeholder="tu@ejemplo.com" required><br><br>
 
-    <h2>Otras formas de contacto</h2>
-    <p>Email: contacto@pixelforge.com (ejemplo)</p>
-    <p>Instagram: @PixelForgeStudios</p>
+            <label>Mensaje</label><br>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea><br><br>
 
-    <br>
-    <a href="index.html">Volver al inicio</a>
+            <button class="btn" type="submit">Enviar mensaje</button>
+          </form>
+
+          <div style="margin-top:14px; opacity:.9">
+            <p>O contáctanos por email: <strong>contacto@pixelforge.com</strong> (ejemplo)</p>
+            <p>Síguenos en <strong>@PixelForgeStudios</strong></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © PixelForge Studios — Gracias por contactar
+    </footer>
+  </div>
 </body>
 </html>
